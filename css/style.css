@@ -1,0 +1,43 @@
+header > nav {
+    margin-top: 70px;
+    margin-left: 250px;
+}
+header > nav > ul > li {
+    display: inline-block;
+    border: 1px solid black;
+    width: 100px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: azure;
+}
+h1 {
+    color: brown;
+    background-color: azure;
+    font-size: large;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2 {
+    color: brown;
+    background-color: azure;
+    font-size: medium;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+    background-color: lightskyblue;
+}
+h3 {
+    background-color: lightskyblue;
+    color: maroon;
+    font-style: italic;
+}
+article {
+    color: brown;
+    background-color: azure;
+    font-size: medium;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
