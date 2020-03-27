@@ -12,6 +12,9 @@ if((guessingGame === 'yes') || (guessingGame === 'y')){
 else if((guessingGame === 'no') || (guessingGame === 'n')){
     alert('Too bad, ' + userName + '. My site, my rules. You\'re going to try and guess a few fun facts about me whether you like it or not!');
 } else {
+    // while((((guessingGame !== 'yes') || (guessingGame !== 'y') || (guessingGame !== 'no') || (guessingGame !== 'n'))) {
+
+    // }{
     alert('Please answer \'Yes\' or \'No\' ' + userName);
 }
 
@@ -49,7 +52,7 @@ else if((pct === 'no') || (pct === 'n')){
 }
 
 var tp = prompt('Do you think I insert a fresh roll of TP waterfall style, ' + userName + '?').trim().toLowerCase();
-console.log('asking ' + userName + ' if they think I\'ve ever been on Japanese TV');
+console.log('asking ' + userName + ' if I know how to properly install a fresh roll of TP');
 if((tp === 'yes') || (tp === 'y')){
     alert('You\'re damn right I do, ' + userName + '! I\'m not an animal');
 }
@@ -58,3 +61,5 @@ else if((tp === 'no') || (tp === 'n')){
 } else {
     alert('Please answer \'Yes\' or \'No\' ' + userName);
 }
+
+alert('Thank you for playing my guessing game, ' + userName + '! As a reward, you can see my site now. Enjoy!')
