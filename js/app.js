@@ -1,11 +1,11 @@
 'use strict';
 
 var userName = prompt('What is your name?');
-console.log(userName + ' is the answer to \'What is your name?\'');
+// console.log(userName + ' is the answer to \'What is your name?\'');
 alert('Hi ' + userName + '! Welcome to my \'About Me\' website');
 
 var guessingGame = prompt('Would you like to learn more about me, ' + userName + '?').trim().toLowerCase();
-console.log('asking ' + userName + ' if they want to play my guessing game');
+// console.log('asking ' + userName + ' if they want to play my guessing game');
 if((guessingGame === 'yes') || (guessingGame === 'y')){
     alert('Great, let\'s see if you can guess a few fun facts about me, ' + userName);
 }
@@ -19,7 +19,7 @@ else if((guessingGame === 'no') || (guessingGame === 'n')){
 }
 
 var age = prompt('Do you think I\'m 30 years old, ' + userName + '?').trim().toLowerCase();
-console.log('asking ' + userName + ' if they think I\'m 30 years old');
+// console.log('asking ' + userName + ' if they think I\'m 30 years old');
 if((age === 'yes') || (age === 'y')){
     alert('You got it, ' + userName);
 }
@@ -30,7 +30,7 @@ else if((age === 'no') || (age === 'n')){
 }
 
 var tv = prompt('Do you think I\'ve ever been on national Japanese TV, ' + userName + '?').trim().toLowerCase();
-console.log('asking ' + userName + ' if they think I\'ve ever been on Japanese TV');
+// console.log('asking ' + userName + ' if they think I\'ve ever been on Japanese TV');
 if((tv === 'yes') || (tv === 'y')){
     alert('You got it, ' + userName + '! I was talking about Kentucky Fried Chicken when I studied abroad there back in 2010... Long story');
 }
@@ -41,7 +41,7 @@ else if((tv === 'no') || (tv === 'n')){
 }
 
 var pct = prompt('Do you think I\'ve ever hiked from Mexico to Canada, ' + userName + '?').trim().toLowerCase();
-console.log('asking ' + userName + ' if they think I\'ve ever hiked across the country');
+// console.log('asking ' + userName + ' if they think I\'ve ever hiked across the country');
 if((pct === 'yes') || (pct === 'y')){
     alert('You got it, ' + userName + '! I hiked the PCT in 2017! Not the best year to try a thru-hike... had to skip about 500 miles due to fire.');
 }
@@ -52,7 +52,7 @@ else if((pct === 'no') || (pct === 'n')){
 }
 
 var tp = prompt('Do you think I insert a fresh roll of TP waterfall style, ' + userName + '?').trim().toLowerCase();
-console.log('asking ' + userName + ' if I know how to properly install a fresh roll of TP');
+// console.log('asking ' + userName + ' if I know how to properly install a fresh roll of TP');
 if((tp === 'yes') || (tp === 'y')){
     alert('You\'re damn right I do, ' + userName + '! I\'m not an animal');
 }
