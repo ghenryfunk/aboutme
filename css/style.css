@@ -1,12 +1,16 @@
 header > nav {
-    margin-top: 70px;
-    margin-left: 250px;
+    /* display: inline-block; */
+    margin: 10px auto 10px auto;
+    max-width: 90%;
+    /* text-align: center; */
 }
 header > nav > ul > li {
     display: inline-block;
     border: 1px solid black;
-    width: 100px;
-    margin: 5px;
+    width: 10%;
+    /* max-width: 70%;
+    min-width: 50%; */
+    margin: auto;
     padding: 5px;
     text-align: center;
     border-radius: 25px;
@@ -15,6 +19,10 @@ header > nav > ul > li {
 h1 {
     color: brown;
     background-color: azure;
+    padding: 5px;
+    margin: 5px auto 5px auto;
+    max-width: 50%;
+    min-width: 30%;
     font-size: x-large;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -22,6 +30,10 @@ h1 {
 h2 {
     color: brown;
     background-color: azure;
+    padding: 5px;
+    margin: 5px auto 5px auto;
+    max-width: 50%;
+    min-width: 30%;
     font-size: medium;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -33,11 +45,32 @@ h3 {
     background-color: lightskyblue;
     color: maroon;
     font-style: italic;
+    text-align: center;
+    border: medium solid blue;
+    padding: 5px;
+    margin: 5px;
 }
 article {
     color: brown;
     background-color: azure;
     font-size: medium;
     text-align: left;
+    max-width: 50%;
+    min-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+article > p {
+    padding: 5px;
+}
+article > ul > li {
+    padding: 5px;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+article > ol > li {
+    padding: 5px;
+    list-style-type: circle;
+    list-style-position: inside;
 }
