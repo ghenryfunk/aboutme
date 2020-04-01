@@ -111,6 +111,7 @@ while(isNaN(siblings)){
 // QUESTION 7 - using arrays for multiple correct answers
 
 var faveFruits = ['persimmon', 'avocado', 'grapes'];
+console.log(faveFruits.length);
 // console.log(faveFuits);
 
 for(i = 0; i < 6; i++){
