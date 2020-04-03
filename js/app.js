@@ -112,6 +112,7 @@ console.log('asking ' + userName + ' how many siblings they think I have');
 function q6() {
   var siblings = prompt('How many siblings do you think I have?').trim();
 while(isNaN(siblings)){
+  console.log("while statement was executed")
   alert('Answer must be a number!');
   for(var i = 0; i < 4; i++){
     console.log(i);
@@ -142,7 +143,7 @@ function q7() {
 console.log(faveFruits.length);
 // console.log(faveFuits);
 
-for(i = 0; i < 6; i++){
+for( var i = 0; i < 6; i++){
   var faveFruitsQ = prompt('Can you guess one of my 3 favorite fruits?').trim().toLocaleLowerCase();
   if(i >=5){
     alert('Correct answers are: 1) Persimmon 2) Avocado 3) Grapes');
