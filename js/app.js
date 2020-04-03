@@ -83,6 +83,9 @@ return pct;
 }
 var pct = q4();
 
+
+
+function q5(){
 var tp = prompt('Do you think I insert a fresh roll of TP waterfall style, ' + userName + '?').trim().toLowerCase();
 // console.log('asking ' + userName + ' if I know how to properly install a fresh roll of TP');
 while(tp !== 'yes' && tp !== 'no'){
@@ -96,7 +99,9 @@ else if((tp === 'no') || (tp === 'n')){
 } else {
   alert('Please answer \'Yes\' or \'No\' ' + userName);
 }
-
+return tp;
+}
+var tp = q5();
 
 // while(isNaN(siblings)){
 //     siblings = prompt('Must be a number! Guess again:')
