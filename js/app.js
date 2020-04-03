@@ -46,7 +46,9 @@ var age = q2();
 // } else {
 //   alert('Please answer \'Yes\' or \'No\' ' + userName);
 // }
-var tv = prompt('Do you think I\'ve ever been on national Japanese TV, ' + userName + '?').trim().toLowerCase();
+
+function q3() {
+  var tv = prompt('Do you think I\'ve ever been on national Japanese TV, ' + userName + '?').trim().toLowerCase();
 // console.log('asking ' + userName + ' if they think I\'ve ever been on Japanese TV');
 while(tv !== 'yes' && tv !== 'no'){
   tv = prompt('Please answer yes or no!').trim().toLowerCase();
@@ -59,6 +61,9 @@ else if((tv === 'no') || (tv === 'n')){
 } else {
   alert('Please answer \'Yes\' or \'No\' ' + userName);
 }
+return tv;
+}
+var tv = q3();
 
 var pct = prompt('Do you think I\'ve ever hiked from Mexico to Canada, ' + userName + '?').trim().toLowerCase();
 // console.log('asking ' + userName + ' if they think I\'ve ever hiked across the country');
