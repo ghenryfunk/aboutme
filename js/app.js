@@ -137,7 +137,8 @@ var siblings = q6();
 
 // QUESTION 7 - using arrays for multiple correct answers
 
-var faveFruits = ['persimmon', 'avocado', 'grapes'];
+function q7() {
+  var faveFruits = ['persimmon', 'avocado', 'grapes'];
 console.log(faveFruits.length);
 // console.log(faveFuits);
 
@@ -154,5 +155,8 @@ for(i = 0; i < 6; i++){
     alert('Not bad, but not one of my top 3! Guess again');
   }
 }
+return faveFruitsQ;
+}
+var faveFruitsQ = q7();
 
 alert('Thank you for playing my guessing game, ' + userName + '! As a reward, you can see my site now. Enjoy!');
