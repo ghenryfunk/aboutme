@@ -65,19 +65,23 @@ return tv;
 }
 var tv = q3();
 
-var pct = prompt('Do you think I\'ve ever hiked from Mexico to Canada, ' + userName + '?').trim().toLowerCase();
-// console.log('asking ' + userName + ' if they think I\'ve ever hiked across the country');
-while(pct !== 'yes' && pct !== 'no'){
-  pct = prompt('Please answer yes or no!').trim().toLowerCase();
+function q4() {
+  var pct = prompt('Do you think I\'ve ever hiked from Mexico to Canada, ' + userName + '?').trim().toLowerCase();
+  // console.log('asking ' + userName + ' if they think I\'ve ever hiked across the country');
+  while(pct !== 'yes' && pct !== 'no'){
+    pct = prompt('Please answer yes or no!').trim().toLowerCase();
+  }
+  if((pct === 'yes') || (pct === 'y')){
+    alert('You got it, ' + userName + '! I hiked the PCT in 2017! Not the best year to try a thru-hike... had to skip about 500 miles due to fire.');
+  }
+  else if((pct === 'no') || (pct === 'n')){
+    alert('Well, ' + userName + ', you\'re kind of right on this one. I had to skip 500 miles due to fire, but I still hiked 2,100 miles of the PCT in 2017!');
+  } else {
+    alert('Please answer \'Yes\' or \'No\' ' + userName);
+  }
+return pct;  
 }
-if((pct === 'yes') || (pct === 'y')){
-  alert('You got it, ' + userName + '! I hiked the PCT in 2017! Not the best year to try a thru-hike... had to skip about 500 miles due to fire.');
-}
-else if((pct === 'no') || (pct === 'n')){
-  alert('Well, ' + userName + ', you\'re kind of right on this one. I had to skip 500 miles due to fire, but I still hiked 2,100 miles of the PCT in 2017!');
-} else {
-  alert('Please answer \'Yes\' or \'No\' ' + userName);
-}
+var pct = q4();
 
 var tp = prompt('Do you think I insert a fresh roll of TP waterfall style, ' + userName + '?').trim().toLowerCase();
 // console.log('asking ' + userName + ' if I know how to properly install a fresh roll of TP');
