@@ -4,17 +4,22 @@ var userName = prompt('What is your name?');
 // console.log(userName + ' is the answer to \'What is your name?\'');
 alert('Hi ' + userName + '! Welcome to my \'About Me\' website');
 
-var guessingGame = prompt('Would you like to learn more about me, ' + userName + '?').trim().toLowerCase();
-// console.log('asking ' + userName + ' if they want to play my guessing game');
-while((guessingGame !== 'yes') && (guessingGame !== 'no')){
-  guessingGame = prompt('Please answer \'yes\' or \'no\'').trim().toLowerCase();
+function q1() {
+  var guessingGame = prompt('Would you like to learn more about me, ' + userName + '?').trim().toLowerCase();
+  // console.log('asking ' + userName + ' if they want to play my guessing game');
+  while((guessingGame !== 'yes') && (guessingGame !== 'no')){
+    guessingGame = prompt('Please answer \'yes\' or \'no\'').trim().toLowerCase();
+  }
+  if((guessingGame === 'yes') || (guessingGame === 'y')){
+    alert('Great, let\'s see if you can guess a few fun facts about me, ' + userName);
+  }
+  else if((guessingGame === 'no') || (guessingGame === 'n')){
+    alert('Too bad, ' + userName + '. My site, my rules. You\'re going to try and guess a few fun facts about me whether you like it or not!');
+  }
+  return guessingGame; 
 }
-if((guessingGame === 'yes') || (guessingGame === 'y')){
-  alert('Great, let\'s see if you can guess a few fun facts about me, ' + userName);
-}
-else if((guessingGame === 'no') || (guessingGame === 'n')){
-  alert('Too bad, ' + userName + '. My site, my rules. You\'re going to try and guess a few fun facts about me whether you like it or not!');
-}
+
+var guessingGame = q1();
 
 //   // while((((guessingGame !== 'yes') || (guessingGame !== 'y') || (guessingGame !== 'no') || (guessingGame !== 'n'))) {
 
@@ -22,6 +27,7 @@ else if((guessingGame === 'no') || (guessingGame === 'n')){
 //   alert('Please answer \'Yes\' or \'No\' ' + userName);
 // }
 
+function q2() {
 var age = prompt('Do you think I\'m 30 years old, ' + userName + '?').trim().toLowerCase();
 // console.log('asking ' + userName + ' if they think I\'m 30 years old');
 while(age !== 'yes' && age !== 'no'){
@@ -33,6 +39,9 @@ if((age === 'yes') || (age === 'y')){
 else if((age === 'no') || (age === 'n')){
   alert('Not quite, ' + userName + '. I am indeed 30! Better luck on this next one.');
 }
+return age;
+}
+var age = q2();
 
 // } else {
 //   alert('Please answer \'Yes\' or \'No\' ' + userName);
