@@ -109,7 +109,8 @@ var tp = q5();
 
 console.log('asking ' + userName + ' how many siblings they think I have');
 
-var siblings = prompt('How many siblings do you think I have?').trim();
+function q6() {
+  var siblings = prompt('How many siblings do you think I have?').trim();
 while(isNaN(siblings)){
   alert('Answer must be a number!');
   for(var i = 0; i < 4; i++){
@@ -130,6 +131,9 @@ while(isNaN(siblings)){
 //     alert('Please answer with a number');
 //   }
 }
+return siblings;
+}
+var siblings = q6();
 
 // QUESTION 7 - using arrays for multiple correct answers
 
