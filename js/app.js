@@ -115,35 +115,63 @@ alert('Hi ' + userName + '! Welcome to my \'About Me\' website');
 
 // console.log('asking ' + userName + ' how many siblings they think I have');
 
-function q6() {
-  var siblings = prompt('How many siblings do you think I have?').trim();
-  while(isNaN(siblings)){ //TODO Must fix this
-    // console.log("while statement was executed");
+function q8(){
+  var guessNumber = 0;
+  var siblingsAnswer = 0;
+  var siblingsQuestion = prompt('How many siblings do you think I have? You have 5 guesses!').trim();
+  while (isNaN(siblingsQuestion)) {
     alert('Answer must be a number!');
+    return siblingsQuestion = prompt('Try again. How many sibs do you think I have?');
   }
-  for(var i = 0; i < 4; i++){
-    console.log(i);
-    // siblings = prompt('How many siblings do you think I have?').trim();
-    if (parseInt(siblings) === 0){
-      alert('You got it, ' + userName + '!');
-      correctAnswer++; 
-      //I need a way to get out of this 'for loop'
-      i = 4;
+  for (guessNumber = 0; guessNumber < 4; guessNumber++){
+    if (siblingsQuestion === siblingsAnswer && guessNumber < 4){
+      alert('You got it ' + userName + '!');
+      correctAnswer++;
+      i=4;
     }
-    else if(i >= 3){
-      alert('Correct answer is 0. I\'m an only child, can\'t you tell??');
+    else if (siblingsQuestion > 0 && guessNumber < 4){
+      alert('Too high ' + userName + '. You have ' + guessNumber + ' guesses left.');
+      guessNumber++;
     }
-    else if(siblings > 0){
-      alert('That\'s too high ' + userName + '. Guess again.');
+    else if (siblingsQuestion !== siblingsAnswer && guessNumber >=3){
+      alert('Nope. I\'m an only child, can\'t you tell!?!');
+      guessNumber++;
     }
   }
-  //   else if(siblings !== isNaN){
-  //     alert('Please answer with a number');
-  //   }
-  
-  return siblings;
+  return siblingsQuestion;
 }
-var siblings = q6();
+var siblingsQuestion = q8();
+
+
+// function q6() {
+//   var siblings = prompt('How many siblings do you think I have?').trim();
+//   while(isNaN(siblings)){ //TODO Must fix this
+//     // console.log("while statement was executed");
+//     alert('Answer must be a number!');
+//   }
+//   for(var i = 0; i < 4; i++){
+//     console.log(i);
+//     // siblings = prompt('How many siblings do you think I have?').trim();
+//     if (parseInt(siblings) === 0){
+//       alert('You got it, ' + userName + '!');
+//       correctAnswer++; 
+//       //I need a way to get out of this 'for loop'
+//       i = 4;
+//     }
+//     else if(i >= 3){
+//       alert('Correct answer is 0. I\'m an only child, can\'t you tell??');
+//     }
+//     else if(siblings > 0){
+//       alert('That\'s too high ' + userName + '. Guess again.');
+//     }
+//   }
+//   //   else if(siblings !== isNaN){
+//   //     alert('Please answer with a number');
+//   //   }
+  
+//   return siblings;
+// }
+// var siblings = q6();
 
 // QUESTION 7 - using arrays for multiple correct answers
 
